@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="static/css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset</title>
+</head>
+<body>
+    <center>
+        <h1>HAHA PLATE</h1>
+    </center>
+    <nav>
+        <ul>
+          <li><a href="/">Dataset</a></li>
+          <li><a href="/train">Training</a></li>
+          <li><a href="/detect">Detection</a></li>
+          <li><a href="/detectf">Detection Folder</a></li>
+          <li><a href="/crud">CRUD</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <h2>Pilih Gambar</h2>
+            <form class="form" action="/prosestrain" method="POST" enctype="multipart/form-data">
+                <div class="custom-file">
+                    <label for="Epoch">Epoch</label>
+                    <input type="number" id="Epoch" name="Epoch"><br><br>
+                </div>
+                <input class="btn-p" type="submit" value="Training">
+            </form>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="box">
+            <h2>Grafik Training</h2>
+            <img id="img-train" src="{{path_loss}}" alt="Grafik Loss">
+            <h2>Hasil Training</h2>
+            <h4>Training Akurasi</h4>
+            <h4>{{acc_train}}</h4>
+            <h4>Testing Akurasi</h4>
+            <h4>{{acc_test}}</h4>
+            <h4>Training Loss</h4>
+            <h4>{{loss_train}}</h4>
+            <h4>Testing Loss</h4>
+            <h4>{{loss_test}}</h4>
+
+
+        </div>
+    </div>
+   
+</body>
+    
+</html>

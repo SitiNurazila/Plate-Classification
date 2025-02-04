@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="static/css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset</title>
+</head>
+<body>
+    <center>
+        <h1>HAHA PLATE</h1>
+    </center>
+    <nav>
+        <ul>
+          <li><a href="/">Dataset</a></li>
+          <li><a href="/train">Training</a></li>
+          <li><a href="/detect">Detection</a></li>
+          <li><a href="/detectf">Detection Folder</a></li>
+          <li><a href="/crud">CRUD</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <h2>Pilih Gambar</h2>
+            <form class="form" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile" name="file">
+                </div>
+                <center>
+                  <input class="white" type="radio" id="putih" name="options" value="putih">
+                  <label class="white" for="enc">Plat Putih</label>
+                  <input class="white" type="radio" id="plat_hitam" name="options" value="hitam">
+                  <label class="white" for="dec">Plat Hitam</label>
+                  <input class="white" type="radio" id="lainnya" name="options" value="istimewa">
+                  <label class="white" for="enc">Lainnya</label></br>
+                </center>
+                <input class="btn-p" type="submit" value="Detect">
+         
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Hasil Deteksi</h2>
+            <h2>{{hasil}}</h2>
+            <h3>Gambar Input</h3>
+            <img class="img-detect" src="{{gambar}}" alt="Deskripsi Gambar">
+            <h3>Bounding Box</h3>
+            <img class="img-detect" src="{{box}}" alt="Deskripsi Gambar">
+            <h3>Crop Plate</h3>
+            <img class="img-detect" src="{{plate}}" alt="Deskripsi Gambar">
+            <h3>Preprocessing</h3>
+            <img class="img-detect" src="{{prep}}" alt="Deskripsi Gambar">
+            <h3>Segmentasi Karakter</h3>
+            <img class="img-detect" src="{{segbon}}" alt="Deskripsi Gambar">
+        </div>
+    </div>
+   
+</body>
+    
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="static/css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset</title>
+</head>
+<body>
+    <center>
+        <h1>HAHA PLATE</h1>
+    </center>
+    <nav>
+        <ul>
+          <li><a href="/">Dataset</a></li>
+          <li><a href="/train">Training</a></li>
+          <li><a href="/detect">Detection</a></li>
+          <li><a href="/detectf">Detection Folder</a></li>
+          <li><a href="/crud">CRUD</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <h2>Pilih Gambar</h2>
+            <form class="form" action="/detectfolder" method="post" enctype="multipart/form-data">
+                <div class="custom-file">
+                    <input type="file" webkitdirectory multiple accept="image/*" onchange="handleFileSelect(event)" name="image">
+
+                </div>
+                    <center>
+                        <input type="radio" id="putih" name="options" value="putih">
+                        <label for="enc">Plat Putih</label>
+                        <input type="radio" id="plat_hitam" name="options" value="hitam">
+                        <label for="dec">Plat Hitam</label>
+                        <input type="radio" id="lainnya" name="options" value="istimewa">
+                        <label for="enc">Lainnya</label></br>
+                      </center>
+                <input class="btn-p" type="submit" value="Detect Folder">
+            </form>
+        </div>
+    </div>
+</body>
+    
+</html>
