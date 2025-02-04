@@ -1,0 +1,208 @@
+*{
+    background-color: #A9B388;
+}
+h1{
+    color: white;
+}
+h2{
+  background-color: #FEFAE0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #5F6F52;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+nav ul li {
+    display: inline;
+}
+  
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #5F6F52;
+    color: white;
+  }
+  
+nav ul li a:hover {
+    background-color: #A9B388;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+.container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center; /* Menyusun secara horizontal ke tengah */
+    /* align-items: center; Menyusun secara vertikal ke tengah */
+    /* height: 10vh; Menggunakan tinggi 100% dari viewport */
+  }
+.box{
+    width: 100vw;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-content: center;
+    background-color: #FEFAE0;
+    border: 2px solid #5F6F52;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn{
+  margin: 10px;
+  width: 15vw;
+  height: 40px;
+  background-color: #A9B388;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btn-p{
+  margin: 10px;
+  width: 15vw;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form{
+  margin: 10px;
+  background-color: #FEFAE0;
+}
+.custom-file{
+  padding : 10px;
+  background-color: #FEFAE0;
+  border: 2px solid #5F6F52;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.custom-file-input{
+  background-color: #FEFAE0;
+  border: 2px solid #5F6F52;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.image-item {
+  width: calc(16.66% - 20px);
+  text-align: center;
+}
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.action-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.action-form label {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.image-item {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger{ color: red;
+}
+.folder-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  background-color: #FEFAE0;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Distribute items evenly along the line */
+}
+
+.folder-list li {
+  width: 18%; /* Atur lebar setiap box */
+  margin: 10px; /* Atur margin antara setiap box */
+  box-sizing: border-box; /* Pastikan margin tidak menambah ukuran box */
+}
+
+.folder-list img {
+  max-width: 100%; /* Gambar tidak melebihi lebar box */
+  height: auto; /* Pertahankan aspek rasio gambar */
+  display: block; /* Hilangkan jarak bawah dari elemen inline */
+  margin: 0 auto; /* Pusatkan gambar dalam box */
+}
+
+/* CSS */
+/* Mengatur ukuran maksimum untuk gambar agar sesuai dengan lebar layar */
+img {
+  display: block; /* Menjadikan gambar sebagai elemen block */
+  max-width: 50%; /* Maksimum lebar gambar */
+  height: auto; /* Tinggi disesuaikan agar proporsi gambar tetap */
+  margin: auto; /* Tinggi disesuaikan agar proporsi gambar tetap */
+  background-color: #FEFAE0;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #FEFAE0;
+  text-align: center;
+}
+.custom-file-label{
+  background-color: #FEFAE0;
+}
+.img-detect {
+  max-width: 30%; /* Maksimum lebar gambar */
+  height: auto; /* Tinggi disesuaikan agar proporsi gambar tetap */
+  display: block; /* Menjadikan gambar sebagai elemen block */
+  margin: 0 auto 20px; /* Menempatkan gambar di tengah dengan ruang bawah 10px */
+}
+h3 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #FEFAE0;
+  text-align: center;
+}
